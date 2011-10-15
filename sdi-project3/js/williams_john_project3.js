@@ -76,25 +76,16 @@ totalColors(daughterName, bottles, "Woohoo!");
 
 //Array start
 
-        var fingerNames = [
+        var fingerNamesRight = [
         	"Right Thumb", 
         	"Right Index Finger", 
         	"Right Middle Finger", 
         	"Right Ring Finger", 
-        	"Right Pinky Finger", 
-        	"Left Thumb", 
-        	"Left Index Finger", 
-        	"Left Middle Finger", 
-        	"Left Ring Finger", 
-        	"Left Pinky Finger"
+        	"Right Pinky Finger"
 ],
-        	
+
+ 	
 			totalFingers = [
-			10, 
-			9, 
-			8, 
-			7, 
-			6, 
 			5, 
 			4, 
 			3, 
@@ -112,17 +103,12 @@ totalColors(daughterName, bottles, "Woohoo!");
 			"blue", 
 			"lime", 
 			"orange", 
-			"yellow", 
-			"pink", 
-			"blue", 
-			"lime", 
-			"orange", 
 			"yellow" 
 
 ];
 
         var visitWhichFinger = function(whatFinger) {
-            var whichFinger = fingerNames[whatFinger],
+            var whichFinger = fingerNamesRight[whatFinger],
             whatColor = nailColors[fingerNumber],
             howManyWeGot = totalFingers[fingerNumber]
 ;
@@ -131,18 +117,19 @@ totalColors(daughterName, bottles, "Woohoo!");
 //Saving this bit to learn later - will separate the hands before applying and removing static info :)
 //if (whichFinger < 5) { whichColor = whichFinger; } else { whichColor = whichFinger - 4; }
             
-            for (var fingers = 0; fingers < howManyWeGot; fingers += 10) {
+            for (var fingers = 0; fingers < howManyWeGot; fingers += 5) {
                     var fingersToDo = howManyWeGot - fingers;
                     console.log("We currently have " + whatFinger + " nails completed. " + fingersToDo + " left to paint.");
             }
             console.log("We finished painting the " + whichFinger + " "+ whatColor + ".");
         };
 
-        for (var fingerNumber = 0, s=fingerNames.length; fingerNumber < s; fingerNumber++) { /*speed enhancement*/
+        for (var fingerNumber = 0, s=fingerNamesRight.length; fingerNumber < s; fingerNumber++) { /*speed enhancement*/
             visitWhichFinger(fingerNumber); 
         };
         
-console.log("All " + familyName[0], "'s fingers are painted and she is very happy today!"); 
+console.log("All " + familyName[0], "'s fingers are painted and she is very happy today!");
+
 //end
 
 
