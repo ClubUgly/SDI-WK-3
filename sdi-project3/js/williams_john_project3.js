@@ -130,6 +130,59 @@ totalColors(daughterName, bottles, "Woohoo!");
         
 console.log("All " + familyName[0], "'s fingers are painted and she is very happy today!");
 
+//left hand
+
+
+        var fingerNamesLeft = [
+        	"Left Thumb", 
+        	"Left Index Finger", 
+        	"Left Middle Finger", 
+        	"Left Ring Finger", 
+        	"Left Pinky Finger"
+],
+
+			totalFingersLeft = [ 
+			5, 
+			4, 
+			3, 
+			2, 
+			1
+],
+			
+			familyName = [
+			"Rogue",
+			"Jay"
+],
+
+			nailColorsLeft = [
+			"pink", 
+			"blue", 
+			"lime", 
+			"orange", 
+			"yellow"
+
+];
+        var visitWhichFinger = function(whatFinger) {
+            var whichFinger = fingerNamesLeft[whatFinger],
+            whatColor = nailColorsLeft[fingerNumber],
+            howManyWeGot = totalFingersLeft[fingerNumber]
+;
+            console.log(familyName[0] + " wanted her dad " + familyName[1] + " the mechanic to paint her " + whichFinger + " with the " + whatColor + " polish. Let's get started!");
+
+            
+            for (var fingers = 0; fingers < howManyWeGot; fingers += 5) {
+                    var fingersToDo = howManyWeGot - fingers;
+                    console.log("We currently have " + whatFinger + " nails completed. " + fingersToDo + " left to paint.");
+            }
+            console.log("We finished painting the " + whichFinger + " "+ whatColor + ".");
+        };
+
+        for (var fingerNumber = 0, s=fingerNamesLeft.length; fingerNumber < s; fingerNumber++) { /*speed enhancement*/
+            visitWhichFinger(fingerNumber); 
+        };
+        
+console.log("All " + familyName[0], "'s fingers are painted and she is very happy today!");
+
 //end
 
 
