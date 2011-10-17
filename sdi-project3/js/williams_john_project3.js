@@ -196,6 +196,19 @@ var dadsTired = true;
 }; 
 //end
 
+//object accessor and method
 
+var daddy = {
+	name: "Jay", //property
+	checklist: [
+		"Ate Dinner",
+		"Went to the store",
+		"Painted Nails",
+		"Watched TV"
+	],
+	goToSleep: function (){ //method
+		console.log("Lets go to sleep.");
+	}
+};
 
        
