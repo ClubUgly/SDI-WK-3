@@ -188,11 +188,11 @@ console.log("All " + familyName[0], "'s fingers are painted and she is very happ
 
 //Boolean start
 console.log('Rogue\'s dad looks tired.');
-var dadsTired = true;
+var dadsTired = false;
 	if (dadsTired === true) {
 	console.log("Jay is exhausted and is now going to sleep.");	
 } else {
-	console.log("Nope, Jay is now going to watch the television.");
+	console.log("Did we finish everything today, lets see?");
 }; 
 //end
 
