@@ -24,13 +24,13 @@ paintNails(0);
 
 //String start
 var feedWho = function (firstName, food) {
-	console.log("Prepared some " + food + " for " + firstName + ",");
-	var feedUs = function(whatsOurName) {
+		console.log("Prepared some " + food + " for " + firstName + ",");
+		var feedUs = function(whatsOurName) {
 		var food = "broccoli";
-		console.log("Prepared some " + food + " for " + whatsOurName + ",");
-	};
+			console.log("Prepared some " + food + " for " + whatsOurName + ",");
+};
 	feedUs("Rogue");
-	console.log("But, " + firstName + " only ate her " + food + ".");
+		console.log("But, " + firstName + " only ate her " + food + ".");
 };
 
 feedWho("Rogue", "carrots");
@@ -42,8 +42,8 @@ console.log("Let's go to the store to see what we can get with $10.");
 var buyPolish = function(cashOnHand){
 	var pricePerPolish = 2,
 	onePolish;
-	if (cashOnHand < pricePerPolish) {
-	console.log("that's not enough to buy anything!");
+		if (cashOnHand < pricePerPolish) {
+		console.log("that's not enough to buy anything!");
 	onePolish = 0;
 	}
 	else {
@@ -53,7 +53,7 @@ var buyPolish = function(cashOnHand){
 };
 
 var gotPolish = buyPolish(10);
-console.log("Great! We got " + gotPolish + " bottle's of polish today.");
+		console.log("Great! We got " + gotPolish + " bottle's of polish today.");
 //end
 
 //Numbers 2 start
@@ -67,11 +67,11 @@ var totalBottles = function (b){
 };
 
 var totalColors = function(name, bottles, message){
-	console.log(name + "'s nail kit has " + bottles + " colors. " + message);
+		console.log(name + "'s nail kit has " + bottles + " colors. " + message);
 };
 
 var area = totalBottles(2);
-totalColors(daughterName, bottles, "Woohoo!");
+	totalColors(daughterName, bottles, "Woohoo!");
 //end
 
 //Array start
@@ -188,6 +188,7 @@ console.log("All " + familyName[0], "'s fingers are painted and she is very happ
 
 //Boolean start
 console.log('Rogue\'s dad looks tired.');
+
 var dadsTired = false;
 	if (dadsTired === true) {
 	console.log("Jay is exhausted and is now going to sleep.");	
