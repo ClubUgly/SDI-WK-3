@@ -107,6 +107,8 @@ var area = totalBottles(2);
 
 ];
 
+var whichHand = ["righthand", "lefthand"];
+
         var visitWhichFinger = function(whatFinger) {
             var whichFinger = fingerNamesRight[whatFinger],
             whatColor = nailColors[fingerNumber],
@@ -128,7 +130,7 @@ var area = totalBottles(2);
             visitWhichFinger(fingerNumber); 
         };
         
-console.log("All " + familyName[0], "'s fingers are painted and she is very happy today!");
+console.log("All " + familyName[0], "'s "+ whichHand[0] + " fingers are painted and so far she is very excited!");
 
 //left hand
 
@@ -162,6 +164,9 @@ console.log("All " + familyName[0], "'s fingers are painted and she is very happ
 			"yellow"
 
 ];
+
+var whichHand = ["righthand", "lefthand"];
+
         var visitWhichFinger = function(whatFinger) {
             var whichFinger = fingerNamesLeft[whatFinger],
             whatColor = nailColorsLeft[fingerNumber],
@@ -181,7 +186,7 @@ console.log("All " + familyName[0], "'s fingers are painted and she is very happ
             visitWhichFinger(fingerNumber); 
         };
         
-console.log("All " + familyName[0], "'s fingers are painted and she is very happy today!");
+console.log("All " + familyName[0], "'s "+ whichHand[1] + " fingers are painted and she is very happy today!");
 
 //end
 
