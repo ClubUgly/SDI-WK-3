@@ -211,4 +211,42 @@ var daddy = {
 	}
 };
 
+var lights = {
+	checklistagain: [
+		"Kitchen lights",
+		"Living Room lights",
+		"Bathroom lights",
+		"Hallway lights"
+	],
+	nowGoToBed: function (){ //method
+		console.log("Great! All the lights are off.");
+	}
+};
+
+var key = "checklist"; 
+
+console.log( daddy[key] );//accessor
+
+daddy.goToSleep();
+
+daddy.goToSleep = function () {
+	console.log("Wait a minute! Did I turn all the lights off?");
+};
+
+daddy["goToSleep"]();
+
+for (var key in lights) {
+	console.log(lights[key]);
+};
+
+lights.nowGoToBed();
+
+lights.nowGoToBed = function () {
+	console.log("Now lets go to bed.");
+};
+
+lights["nowGoToBed"]();
+
+//end
+
        
